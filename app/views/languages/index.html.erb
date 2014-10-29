@@ -1,0 +1,19 @@
+<h1>Languages#index</h1>
+<% if @languages.empty? %>
+  No Lanuage found
+
+<% else %>
+  <table>
+    <tr>
+      <th>Title</th>
+    </tr>
+
+  <% @languages.each do |lang| %>
+    <tr>
+      <td>
+        <%= lang.title %>
+      </td>
+    </tr>
+  <% end %>
+<% end %>
+<a href="/languages/new"> Add Language </a>

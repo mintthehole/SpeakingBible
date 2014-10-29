@@ -1,0 +1,12 @@
+<h1>Languages#new</h1>
+<%= form_for Language.new do |f|%>
+  Titile
+  <%= f.text_field :title %>
+  <%= f.submit %>
+<% end %>
+
+
+<form name="input" action="/languages_form" method="post">
+Title: <input type="text" name="title">
+<input type="submit" value="Submit">
+</form>

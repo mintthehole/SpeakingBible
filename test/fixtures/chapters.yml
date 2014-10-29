@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  book_id: 1
+  langauage_id: 1
+  audio_url: MyText
+  chapter_no: 1
+
+two:
+  book_id: 1
+  langauage_id: 1
+  audio_url: MyText
+  chapter_no: 1
