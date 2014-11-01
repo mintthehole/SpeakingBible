@@ -1,8 +1,77 @@
-<h1> Books Listing page</h1>
-<% @books_array.each  do |book|%>
-  <div>
-    <a href="#" class="get_chapter" book_id="<%= book.id %>">
-      <%= book.title %>
-    </a>
+<script>
+            $(document).ready(function(){
+
+
+                    //for reading the id
+              $('.ad').click(function() {
+                  var id = $(this).attr('id');
+                  //alert(id);
+                  //play audio
+                   var audioElement = document.createElement('audio');
+                    var no = (id < 10 ? "0" : "") + id;
+                        audioElement.setAttribute('src', '/sound/ENG/b'+no+'.mp3');
+                        audioElement.setAttribute('autoplay', 'autoplay');
+                        audioElement.addEventListener("load", function() {
+                        audioElement.play();
+                }, true);
+                audioElement.play();
+
+                  //END to play audio
+                 // $container.cycle(id.replace('pager_', ''));
+                  return false;
+              });
+              //END for reading the id
+
+              $('.ad').click(function() {
+              //alert('d');
+                var id = $(this).attr('id');
+                //alert(id);
+                $('select[name="bookslist"] option[value='+id+']').attr("selected","selected");
+                //$('select[name="bookslist"] option:selected').attr("selected",null);
+                //$("select[name="bookslist").selectmenu('refresh');
+            });
+
+
+        }); //End document
+</script>
+
+
+
+   <div class="sel-size "><!--Drop Downs start -->
+
+        <select name="bookslist">
+        <option value="b01">Mat</option>
+        <option value="b02">Mar</option>
+        <option value="b03">Luk</option>
+        <option value="b04">Joh</option>
+      </select>
+      Ch
+       <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      Ver
+       <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select></center><!--Ends Drop Downs  -->
+      </div>
+
+    <div class="col-md-4 col-xs-12   col-md-offset-4 main-panel books-list">
+    <% @books_array.each do |book| %>
+      <div class="col-md-12 col-sm-4 col-xs-4 chapter-btn ad" id="<%=book.book_no%>">
+      <h6><%= book.book_sid %></h6>
+      </div>
+    <% end %>
+    </div>
+
+
   </div>
-<% end %>
+    <div class="col-md-12  play-controls1 col-md-offset-5"> <!--Not alligned -->
+
+    <div class="col-md-1 col-sm-1 col-xs-1 button-bg"><i class=" fa fa-play"></i>
+  </div>

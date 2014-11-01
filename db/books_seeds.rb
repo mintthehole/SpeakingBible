@@ -1,0 +1,169 @@
+a = [
+  {
+    "s_title"=>"Matt",
+    "title"=>"Matthew",
+    "no"=>1,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Mark",
+    "title"=>"Mark",
+    "no"=>2,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Luke",
+    "title"=>"Luke",
+    "no"=>3,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"John",
+    "title"=>"John",
+    "no"=>4,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Acts",
+    "title"=>"Acts",
+    "no"=>5,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Rom",
+    "title"=>"Romans",
+    "no"=>6,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"1Cor",
+    "title"=>"1 Corinthians",
+    "no"=>7,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"2Cor",
+    "title"=>"2 Corinthians",
+    "no"=>8,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Gal",
+    "title"=>"Galatians",
+    "no"=>9,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Eph",
+    "title"=>"Ephesians",
+    "no"=>10,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Phil",
+    "title"=>"Philippians",
+    "no"=>11,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Col",
+    "title"=>"Colossians",
+    "no"=>12,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"1Thess",
+    "title"=>"1 Thessalonians",
+    "no"=>13,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"2Thess",
+    "title"=>"2 Thessalonians",
+    "no"=>14,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"1Tim",
+    "title"=>"1 Timothy",
+    "no"=>15,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"2Tim",
+    "title"=>"2 Timothy",
+    "no"=>16,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Titus",
+    "title"=>"Titus",
+    "no"=>17,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Phlm",
+    "title"=>"Philemon",
+    "no"=>18,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Heb",
+    "title"=>"Hebrews",
+    "no"=>19,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Jas",
+    "title"=>"James",
+    "no"=>20,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"1Pet",
+    "title"=>"1 Peter",
+    "no"=>21,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"2Pet",
+    "title"=>"2 Peter",
+    "no"=>22,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"1John",
+    "title"=>"1 John",
+    "no"=>23,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"2John",
+    "title"=>"2 John",
+    "no"=>24,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"3John",
+    "title"=>"3 John",
+    "no"=>25,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Jude",
+    "title"=>"Jude",
+    "no"=>26,
+    "a"=>"HNDWTCN"
+  },
+  {
+    "s_title"=>"Rev",
+    "title"=>"Revelation",
+    "no"=>27,
+    "a"=>"HNDWTCN"
+  }
+]
+
+l = Language.find_by_title("English")
+a.each do |i|
+  Book.create(:language_id =>l.id,:title=>i["title"],:book_sid => i["s_title"],:book_no => i["no"] )
+end

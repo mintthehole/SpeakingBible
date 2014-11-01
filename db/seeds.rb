@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Language.delete_all
+Book.delete_all
+Language.create(:title => "Tamil")
+Language.create(:title => "English")
+Language.create(:title => "Hindi")
+Language.create(:title => "Malayalam")
+
+require File.expand_path('../books_seeds.rb', __FILE__)
