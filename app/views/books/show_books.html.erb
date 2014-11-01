@@ -1,15 +1,17 @@
 <script>
             $(document).ready(function(){
 
-
+              lang = "<%=@lang%>";
+              language = "<%=@language%>";
                     //for reading the id
               $('.ad').click(function() {
                   var id = $(this).attr('id');
                   //alert(id);
                   //play audio
+
                    var audioElement = document.createElement('audio');
                     var no = (id < 10 ? "0" : "") + id;
-                        audioElement.setAttribute('src', '/sound/ENG/b'+no+'.mp3');
+                        audioElement.setAttribute('src', "/sound/"+lang+"/b"+no+".mp3");
                         audioElement.setAttribute('autoplay', 'autoplay');
                         audioElement.addEventListener("load", function() {
                         audioElement.play();
@@ -47,9 +49,9 @@
     </div>
 
     <div class="col-md-4 col-xs-12   col-md-offset-4 main-panel books-list">
-    <% @books_array.each do |book| %>
-      <div class="col-md-12 col-sm-4 col-xs-4 chapter-btn ad" id="<%=book.book_no%>" book_sid="<%= book.book_sid %>">
-      <h6><%= book.book_sid %></h6>
+    <% @books_array.each_with_index do |book,i| %>
+      <div class="col-md-12 col-sm-4 col-xs-4 chapter-btn ad" id="<%=i+1%>" book_sid="<%= book.book_sid %>">
+      <h6><%=book.title[0..3] %></h6>
       </div>
     <% end %>
     </div>

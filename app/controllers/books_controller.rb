@@ -1,7 +1,14 @@
 class BooksController < ApplicationController
   def show_books
     @books_array = []
+
     lang = Language.where("UPPER(title) = '#{params[:language].upcase}'").first
+    if lang.title == "English"
+      @lang = "ENG"
+    else
+      @lang = "HND"
+    end
+    @language = lang.title
     if lang
       @books_array = Book.where("language_id = #{lang.id}")
     end
@@ -24,7 +31,13 @@ class BooksController < ApplicationController
   end
 
   def listen
-    lang = Language.where("title = 'English'").first
+    lang = Language.where("UPPER(title) = '#{params[:language].upcase}'").first
+    if lang.title == "English"
+      @lang = "ENG"
+    else
+      @lang = "HND"
+    end
+    @language = lang.title
     @chapter = Chapter.where("book_sid = '#{params[:book_sid]}' and language_id= #{lang.id} and chapter_no=#{params[:chapter_no]}").first
     @verse = Verse.where("verse_no = #{params[:verse_id]} and book_sid = '#{params[:book_sid]}' and chapter_id =#{params[:chapter_no]} and language_id = #{lang.id}").first
     @end_time = Verse.where("verse_no = #{@verse.try(:verse_no).to_i+1} and book_sid = '#{params[:book_sid]}' and chapter_id =#{params[:chapter_no]} and language_id = #{lang.id}").first.try(:audio_time) || "0"

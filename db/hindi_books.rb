@@ -1,0 +1,224 @@
+# encoding: utf-8
+books=[
+  {
+    "book_id"=>"Matt",
+    "book_name"=>"मत्ती",
+    "book_order"=>55,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>28
+  },
+  {
+    "book_id"=>"Mark",
+    "book_name"=>"मरकुस",
+    "book_order"=>56,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>16
+  },
+  {
+    "book_id"=>"Luke",
+    "book_name"=>"लूका",
+    "book_order"=>57,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>24
+  },
+  {
+    "book_id"=>"John",
+    "book_name"=>"यूहन्ना",
+    "book_order"=>58,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>21
+  },
+  {
+    "book_id"=>"Acts",
+    "book_name"=>"प्रेरितों के काम",
+    "book_order"=>59,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>28
+  },
+  {
+    "book_id"=>"Rom",
+    "book_name"=>"रोमियों",
+    "book_order"=>60,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>16
+  },
+  {
+    "book_id"=>"1Cor",
+    "book_name"=>"1 कुरिन्थियों",
+    "book_order"=>61,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>16
+  },
+  {
+    "book_id"=>"2Cor",
+    "book_name"=>"2 कुरिन्थियों",
+    "book_order"=>62,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>13
+  },
+  {
+    "book_id"=>"Gal",
+    "book_name"=>"गलातियों",
+    "book_order"=>63,
+    "chapters"=>"1,2,3,4,5,6",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>6
+  },
+  {
+    "book_id"=>"Eph",
+    "book_name"=>"इफिसियों",
+    "book_order"=>64,
+    "chapters"=>"1,2,3,4,5,6",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>6
+  },
+  {
+    "book_id"=>"Phil",
+    "book_name"=>"फिलिप्पियों",
+    "book_order"=>65,
+    "chapters"=>"1,2,3,4",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>4
+  },
+  {
+    "book_id"=>"Col",
+    "book_name"=>"कुलुस्सियों",
+    "book_order"=>66,
+    "chapters"=>"1,2,3,4",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>4
+  },
+  {
+    "book_id"=>"1Thess",
+    "book_name"=>"1 थिस्सलुनीकियों",
+    "book_order"=>67,
+    "chapters"=>"1,2,3,4,5",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>5
+  },
+  {
+    "book_id"=>"2Thess",
+    "book_name"=>"2 थिस्सलुनीकियों",
+    "book_order"=>68,
+    "chapters"=>"1,2,3",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>3
+  },
+  {
+    "book_id"=>"1Tim",
+    "book_name"=>"1 तीमुथियुस",
+    "book_order"=>69,
+    "chapters"=>"1,2,3,4,5,6",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>6
+  },
+  {
+    "book_id"=>"2Tim",
+    "book_name"=>"2 तीमुथियुस",
+    "book_order"=>70,
+    "chapters"=>"1,2,3,4",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>4
+  },
+  {
+    "book_id"=>"Titus",
+    "book_name"=>"तीतुस",
+    "book_order"=>71,
+    "chapters"=>"1,2,3",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>3
+  },
+  {
+    "book_id"=>"Phlm",
+    "book_name"=>"फिलेमोन",
+    "book_order"=>72,
+    "chapters"=>"1",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>1
+  },
+  {
+    "book_id"=>"Heb",
+    "book_name"=>"इब्रानियों",
+    "book_order"=>73,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>13
+  },
+  {
+    "book_id"=>"Jas",
+    "book_name"=>"याकूब",
+    "book_order"=>74,
+    "chapters"=>"1,2,3,4,5",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>5
+  },
+  {
+    "book_id"=>"1Pet",
+    "book_name"=>"1 पतरस",
+    "book_order"=>75,
+    "chapters"=>"1,2,3,4,5",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>5
+  },
+  {
+    "book_id"=>"2Pet",
+    "book_name"=>"2 पतरस",
+    "book_order"=>76,
+    "chapters"=>"1,2,3",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>3
+  },
+  {
+    "book_id"=>"1John",
+    "book_name"=>"1 यूहन्ना",
+    "book_order"=>77,
+    "chapters"=>"1,2,3,4,5",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>5
+  },
+  {
+    "book_id"=>"2John",
+    "book_name"=>"2 यूहन्ना",
+    "book_order"=>78,
+    "chapters"=>"1",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>1
+  },
+  {
+    "book_id"=>"3John",
+    "book_name"=>"3 यूहन्ना",
+    "book_order"=>79,
+    "chapters"=>"1",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>1
+  },
+  {
+    "book_id"=>"Jude",
+    "book_name"=>"यहूदा",
+    "book_order"=>80,
+    "chapters"=>"1",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>1
+  },
+  {
+    "book_id"=>"Rev",
+    "book_name"=>"प्रकाशित वाक्य",
+    "book_order"=>81,
+    "chapters"=>"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+    "dam_id"=>"HNDWTCN2DA",
+    "number_of_chapters"=>22
+  }
+]
+
+l = Language.find_by_title("Hindi")
+books.each do |i|
+  Book.create(:language_id =>l.id,:title=>i["book_name"],:book_sid => i["book_id"],:book_no => i["book_order"] )
+end

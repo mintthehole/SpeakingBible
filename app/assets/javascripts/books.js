@@ -24,7 +24,7 @@ $(document).ready(function() {
   });
 
   $('.submit').live('click',function(event){
-    var url = "/books/listen?book_sid="+$('#book').val()+"&chapter_no="+$('#chapter').val()+"&verse_id="+ $('#verse').val();;
+    var url = "/"+language+"/books/listen?book_sid="+$('#book').val()+"&chapter_no="+$('#chapter').val()+"&verse_id="+ $('#verse').val();;
     $(this).attr('href',url);
   });
 

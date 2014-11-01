@@ -5,16 +5,20 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Language.delete_all
-Book.delete_all
-Chapter.delete_all
-Verse.delete_all
-Language.create(:title => "Tamil")
-Language.create(:title => "English")
-Language.create(:title => "Hindi")
-Language.create(:title => "Malayalam")
+# Language.delete_all
+# Book.delete_all
+# Chapter.delete_all
+# Verse.delete_all
+# Language.create(:title => "Tamil")
+# Language.create(:title => "English")
+# Language.create(:title => "Hindi")
+# Language.create(:title => "Malayalam")
 
-require File.expand_path('../books_seeds.rb', __FILE__)
-require File.expand_path('../chapter_seeds.rb', __FILE__)
+# require File.expand_path('../books_seeds.rb', __FILE__)
+# require File.expand_path('../chapter_seeds.rb', __FILE__)
 
-require File.expand_path('../verse.rb', __FILE__)
+# require File.expand_path('../verse.rb', __FILE__)
+
+# require File.expand_path('../hindi_books.rb', __FILE__)
+require File.expand_path('../hindi_chapter_seeds.rb', __FILE__)
+require File.expand_path('../hindi_verse.rb', __FILE__)
