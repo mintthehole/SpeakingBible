@@ -17,13 +17,25 @@
 </head>
   <body>
     <header>
-      <div class="menu-band">
-          <h4>
-        <div class="col-md-6 pull-left"><i class="fa fa-bars"></i></div>LISTEN<div class="col-md-3 pull-right">
-        <i class="col-md-4 fa fa-home"></i>
 
-          </h4>
-      </div>
+      <div class="menu-band container">
+          <h4>
+        <div class="pull-left">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="">LISTEN
+          <div class=" pull-right">
+            <a href="<%= root_path %>">
+
+              <i class="col-md-4 fa fa-home">
+              </i>
+            </a>
+
+          </div>
+        </div>
+
+
+      </h4>
     </header>
     <div class="container">
       <%= yield %>

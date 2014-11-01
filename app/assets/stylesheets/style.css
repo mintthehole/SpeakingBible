@@ -3,68 +3,77 @@ header {
 	/*background-color:#89B286;*/
     color:white;
     text-align:center;
-    padding:15px;	 
-	height:50px;
-	margin-top:10px;
+    padding:15px;
+	height:60px;
+}
+.menu-band.container{
+  margin-top: 0px;
+  font-size: 26px;
 }
 .container {
 	background: #E2FAE0;
 
+}
+.menu-band a{
+  color: green;
+}
+.menu-band .fa{
+  font-size: 26px;
 }
 p {
     font-size: 20px;
     margin-top: 30px;
 }
 body {
-	background-color: #E2FAE0; 
+	background-color: #E2FAE0;
 	}
 footer {
     background-color:#E2FAE0;
 	height:40px;
 	position:absolute;
 	bottom:0;
-	
-	
-	
+
+
+
 }
 .play-controls {
     margin-top:20px;
-	
-	
+
+
 }
 .home{
 	margin-top:30px;
-	
+
 }
 .verse-box{
 	border: 1px solid #a1a1a1;
-    padding: 5px 10px; 
+    padding: 5px 10px;
     background: #FCFCFC;
     min-height: 150px;
     box-shadow: 3px 3px 5px #888;
 }
 .verse-box1{
 	border: 2px solid #a1a1a1;
-    padding: 5px 10px; 
+    padding: 5px 10px;
     background: #FCFCFC;
     min-height: 75px;
 	margin-top:10px;
-   
+
 }
 .verse-box2{
 	border: 2px solid #a1a1a1;
-    padding: 5px 10px; 
+    padding: 5px 10px;
     background: #FCFCFC;
-   
+
 	margin-top:40px;
 	vertical-align: center;
-   
+
 }
 .memory-verse{
 	/*border: 2px solid #a1a1a1;*/
     padding: 8px;
     background: #FCFCFC;
-   
+
 	margin-top:10px;
 	vertical-align: center;
     box-shadow: 3px 3px 5px #888;
@@ -78,11 +87,11 @@ footer {
 	border: 2px solid #a1a1a1;
     padding: 8px;
     background: #FCFCFC;
-   
+
 	margin-top:20px;
-	
+
 	box-shadow: -5px -6px 5px #888;
-   
+
 }
 .study-toolbar{
 	border: 2px solid #a1a1a1;
@@ -107,7 +116,7 @@ td{
 .play-controls1 .fa-play{
 	color:white;
 	font-size: 50%;
-	
+
 }
 .menu-band .fa-play{
 	color:white;
@@ -118,7 +127,7 @@ td{
 	color:white;
 	font-size: 50%;
 	margin-top:10px;
-	
+
 }
 
 .play-controls .fa, .main-panel .fa{
@@ -126,7 +135,7 @@ td{
 	font-size: 40%;
 	margin-top:15px;
 	display: inherit;
-	
+
 }
 
 .menu-band{
@@ -134,15 +143,24 @@ td{
 	color:green;
 	font-size: 50%;
 	margin-top:10px;
-	
+
+}
+.center{
+  text-align: center;
 }
 .play-controls .fa-list{
 	font-size:45%;
 }
+.books-list div{
+  cursor: pointer;
+}
+.submit{
+  cursor: pointer;
+}
 .button-bg
 {
-	width:60px;
-	height:60px;
+  width: 92px;
+	height:92px;
 	border-radius:50%;
 	font-size:50px;
 	background: #89B286;
@@ -155,7 +173,7 @@ td{
 .chapter-btn
 {
 	width:60px;
-	
+
 	font-size:50px;
 	background: #89B286;
 	text-align:center;

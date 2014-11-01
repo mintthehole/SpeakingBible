@@ -37,33 +37,18 @@
 
 
 
-   <div class="sel-size "><!--Drop Downs start -->
+   <div class="sel-size center"><!--Drop Downs start -->
+      <%= select_tag :book, options_for_select(@books_array.collect(&:book_sid)) %>
+      Chap
+      <%= select_tag :chapter, options_for_select((1..28)) %>
+      V
+      <%= select_tag :verse, options_for_select((1..25)) %>
 
-        <select name="bookslist">
-        <option value="b01">Mat</option>
-        <option value="b02">Mar</option>
-        <option value="b03">Luk</option>
-        <option value="b04">Joh</option>
-      </select>
-      Ch
-       <select>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select>
-      Ver
-       <select>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-      </select></center><!--Ends Drop Downs  -->
-      </div>
+    </div>
 
     <div class="col-md-4 col-xs-12   col-md-offset-4 main-panel books-list">
     <% @books_array.each do |book| %>
-      <div class="col-md-12 col-sm-4 col-xs-4 chapter-btn ad" id="<%=book.book_no%>">
+      <div class="col-md-12 col-sm-4 col-xs-4 chapter-btn ad" id="<%=book.book_no%>" book_sid="<%= book.book_sid %>">
       <h6><%= book.book_sid %></h6>
       </div>
     <% end %>
@@ -73,5 +58,5 @@
   </div>
     <div class="col-md-12  play-controls1 col-md-offset-5"> <!--Not alligned -->
 
-    <div class="col-md-1 col-sm-1 col-xs-1 button-bg"><i class=" fa fa-play"></i>
+    <div class="center button-bg submit"><i class=" fa fa-play"></i>
   </div>
