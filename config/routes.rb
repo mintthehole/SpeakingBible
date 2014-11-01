@@ -12,9 +12,9 @@ SpeakingBible::Application.routes.draw do
   post "/languages" => "languages#create"
   post "/languages_form" => "languages#create_form"
 
-  get "/books" => "books#show_books"
+  get "/:language/books" => "books#show_books"
 
-
+  get "/books/get_chapter" => "books#get_chapters_for_book"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -65,8 +65,19 @@ SpeakingBible::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
-
+  root :to => 'dashboard#index'
+  match '/new'=>"home#new"
+  match '/alert'=>"home#alert"
+  match '/listen'=>"home#listen"
+  match '/book_list'=>"home#book_list"
+  match '/crosslink'=>"home#crosslink"
+  match '/home_screen'=>"home#home_screen"
+  match '/memorize'=>"home#memorize"
+  match '/recording'=>"home#recording"
+  match '/recording_listing'=>"home#recording_listing"
+  match '/search_result'=>"home#search_result"
+  match '/info'=>"home#info"
+  match '/feedback'=>"home#feedback"
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
