@@ -1,0 +1,17 @@
+<h2>Please intergrate with the styling</h2>
+Verse
+<%= @verse.verse_no %>
+<p>
+<%= html_escape(@verse.verse_text).gsub(/(?:\\n?|\n\n?)/, '').html_safe %>
+</p>
+Audio
+<p>
+<audio controls>
+  <source src ="http://cloud.faithcomesbyhearing.com/mp3audiobibles2/<%=  @chapter.audio_url%>">
+</audio>
+</p>
+Verse Start Timing:
+<%= @verse.audio_time %>
+<br/>
+Verse End Timing:
+<%= @end_time %>

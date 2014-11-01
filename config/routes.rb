@@ -15,6 +15,9 @@ SpeakingBible::Application.routes.draw do
   get "/:language/books" => "books#show_books"
 
   get "/books/get_chapter" => "books#get_chapters_for_book"
+  get "/books/get_verse" => "books#get_verse_for_chapter"
+  get "/books/listen" => "books#listen"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

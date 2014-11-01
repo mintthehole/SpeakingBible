@@ -157,6 +157,18 @@ td{
 .submit{
   cursor: pointer;
 }
+
+.button-bg-small{
+    width: 62px;
+    height:62px;
+    padding: 10px;
+    border-radius:50%;
+    font-size:20px;
+    background: #89B286;
+    text-align:center;
+    border: 3px solid white;
+
+}
 .button-bg
 {
   width: 92px;
