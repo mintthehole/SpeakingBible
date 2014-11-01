@@ -17,7 +17,7 @@ $(document).ready(function() {
     $.get("/books/get_verse?book_sid=" + book_sid+"&chapter_no="+$(this).val(), function(data){
       $.each(data, function(index,val) {
         console.log(val);
-        row = row + '<option value="' + val['id'] + '">' + val['no'] + '</option>';
+        row = row + '<option value="' + val['no'] + '">' + val['no'] + '</option>';
       });
       $('#verse').html(row);
     });

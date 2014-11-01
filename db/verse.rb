@@ -87355,5 +87355,5 @@ verses = [
 lang = Language.find_by_title("English")
 verses.each_with_index do |v,i|
 Verse.create(book_sid: v["book_sid"], verse_no: v["verse"], chapter_id: v["chap_no"], verse_text: v["verse_text"], audio_time: v["start"], language_id: lang.id)
-break if i==1000
+break if i==100
 end
