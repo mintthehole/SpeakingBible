@@ -1,10 +1,18 @@
-<h2>Please intergrate with the styling</h2>
-Verse
+
+
 <%= @verse.verse_no %>
-<p>
-<%= html_escape(@verse.verse_text).gsub(/(?:\\n?|\n\n?)/, '').html_safe %>
-</p>
-Audio
+<div class="col-md-12 verse-box" id="verse-box">
+		    <div class="pull-right study-toolbar"><i class="col-md-4 fa fa-microphone"></i>
+		    <i class="col-md-4 fa fa-bars"></i><i class="col-md-4 fa fa-files-o"></i>
+			</div><!--ENDS study-toolbar -->
+			<p>
+			<%= html_escape(@verse.verse_text).gsub(/(?:\\n?|\n\n?)/, '').html_safe %>
+			</p>
+	</div>
+
+
+<div class="row col-md-12  col-md-offset-4">
+
 <p>
 <audio controls>
   <source src ="http://cloud.faithcomesbyhearing.com/mp3audiobibles2/<%=  @chapter.audio_url%>">
@@ -15,3 +23,4 @@ Verse Start Timing:
 <br/>
 Verse End Timing:
 <%= @end_time %>
+</div>
