@@ -10,7 +10,7 @@ header {
     height:50px;
 margin-bottom:10px;
 display:block;
-}	
+}
 .logo{
 position:absolute;
 margin-left:10px;
@@ -31,14 +31,14 @@ margin-top: 3px !important;
 margin-left:100px !important;
 color:white;
 }
-.menu-band i.fa{	
+.menu-band i.fa{
 font-size: 30px;
 margin-top: 10px;
 margin-right:10px;
-color:white;	
+color:white;
 }
 .item{
-background: image-url('/assets/logo-cross.jpg');  !important;	
+background:url('/assets/logo-cross.jpg') !important;
 }
 
 .item h3{
@@ -74,7 +74,7 @@ bottom: 0;
 width: 100%;
 }
 footer a{
-    
+
     color:white;
 }
 

@@ -502,8 +502,10 @@ verses= [
   }
 ]
 
+
+time = [05.666,11.433,15.566,20.833,28.666,33.733,39.733,50.666,57.733,64.6,73,83.3,87,101.1,113.6,131.6,137.3,143.2,155.4,164.2,171.6,190.1,200.3,209.4,211.7,221.8,230.3,237.8,244.7,255.4,270.8,280.4,289.9,304.8,310.5,315.4,322.4,328.9,342.6,358.3,366.8,375.2,390.1,401.1,404.6,417.7,427.4,438.3,453.3,460]
 lang = Language.find_by_title("Hindi")
 verses.each_with_index do |v,i|
-Verse.create(book_sid: v["book_id"], verse_no: v["verse_id"], chapter_id: v["chapter_id"], verse_text: v["verse_text"], audio_time: v["start"], language_id: lang.id)
+Verse.create(book_sid: v["book_id"], verse_no: v["verse_id"], chapter_id: v["chapter_id"], verse_text: v["verse_text"], audio_time: time[i], language_id: lang.id)
 break if i==100
 end
