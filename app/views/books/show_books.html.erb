@@ -1,3 +1,4 @@
+
 <script>
             $(document).ready(function(){
 
@@ -37,7 +38,11 @@
         }); //End document
 </script>
 
-
+<div class="col-md-2 pull-right">
+<a href="home.html" title="home"><i class="fa fa-home ad" id="home"></i></a>
+<a href="book_list.html" title="home"><i class="fa fa-list ad" id="book_listing"></i></a>
+<a href="alert.html" title="home"><i class="fa fa-calendar ad" id="alerts"></i></a>
+</div>  
 
    <div class="sel-size center"><!--Drop Downs start -->
       <%= select_tag :book, options_for_select(@books_array.collect(&:book_sid)) %>

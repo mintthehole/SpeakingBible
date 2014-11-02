@@ -1,25 +1,90 @@
+/* NEW CHANGES */
+body {
+    background-color: #E2FAE0 !important;
+/*background-color: #E2FAE0; */
+}
 header {
-    background-color:#89B286;
-	/*background-color:#89B286;*/
+    /*background-color:#89B286;*/
     color:white;
-    text-align:center;
-    padding:15px;
-	height:60px;
+    /*text-align:center; */
+    height:50px;
+margin-bottom:10px;
+display:block;
+}	
+.logo{
+position:absolute;
+margin-left:10px;
+top:10px;
+z-index:10;
+border: 6px solid #2A7E01;
+
 }
-.menu-band.container{
-  margin-top: 0px;
-  font-size: 26px;
+
+.menu-band{
+background-color:#2A7E01;
+height:50px;
+font-size: 50%;
+margin-top:40px;
 }
+.menu-band h1{
+margin-top: 3px !important;
+margin-left:100px !important;
+color:white;
+}
+.menu-band i.fa{	
+font-size: 30px;
+margin-top: 10px;
+margin-right:10px;
+color:white;	
+}
+.item{
+background: url(/images/logo-cross.jpg) repeat !important;	
+}
+
+.item h3{
+color:#2A7E01;
+font-weight:bold;
+font-size:30px;
+}
+.item h2{
+color:#d1d1d1;
+font-weight:bold;
+display:none;
+}
+.item p{
+color:#d5d5d5;
+font-size:15px;
+}
+.bible-links{
+text-align:center;
+
+}
+.bible-links div{
+text-align:center;
+
+}
+footer {
+    background-color:#2A7E01;
+    color:white;
+text-align:center;
+  display:block;
+font-size: 12px;
+/*position: absolute;*/
+bottom: 0;
+width: 100%;
+}
+footer a{
+    
+    color:white;
+}
+
+
+
 .container {
 	background: #E2FAE0;
 
 }
-.menu-band a{
-  color: green;
-}
-.menu-band .fa{
-  font-size: 26px;
-}
+
 p {
     font-size: 20px;
     margin-top: 30px;
@@ -27,15 +92,7 @@ p {
 body {
 	background-color: #E2FAE0;
 	}
-footer {
-    background-color:#E2FAE0;
-	height:40px;
-	position:absolute;
-	bottom:0;
 
-
-
-}
 .play-controls {
     margin-top:20px;
 
@@ -118,11 +175,7 @@ td{
 	font-size: 50%;
 
 }
-.menu-band .fa-play{
-	color:white;
-	font-size: 30px;
-	margin-top: -10px;
-}
+
 .play-controls .fa{
 	color:white;
 	font-size: 50%;
@@ -138,13 +191,7 @@ td{
 
 }
 
-.menu-band{
-	background-color:#89B286;
-	color:green;
-	font-size: 50%;
-	margin-top:10px;
 
-}
 .center{
   text-align: center;
 }
