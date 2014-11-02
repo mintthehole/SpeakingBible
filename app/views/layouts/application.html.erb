@@ -10,33 +10,47 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
   <!-- Font awesome starts here -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap includes starts here -->
+    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+  <!-- Font awesome starts here --> 
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
+        <!-- Ends Font awesome  -->
+  <!-- Ends Bootstrap  -->
+  <!-- Custom code starts here -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Ends Custom code  -->
+  
+  
       <title>SpeakingBible</title>
       <%= stylesheet_link_tag    "application", :media => "all" %>
       <%= javascript_include_tag "application" %>
       <%= csrf_meta_tags %>
 </head>
   <body>
-    <header>
+<header>
+<div class="logo ">  
+<%= image_tag "logo.jpg " ,:class => "img-responsive"%>
+</div>
+<div class="col-md-12 menu-band ">  
+    
+<div class="col-md-6 pull-left">    
+<h1 class="ad" id="book_listing">ListBooks</h1>
+</div>
+<div class="col-md-2 pull-right">
+<a href="http://localhost:3000/new" title="home"><i class="fa fa-home ad" id="home"></i></a>
 
-      <div class="menu-band container">
-          <h4>
-        <div class="pull-left">
-          <i class="fa fa-bars"></i>
-        </div>
-        <div class="">LISTEN
-          <div class=" pull-right">
-            <a href="<%= root_path %>">
+<a href="book_list.html" title="home"><i class="fa fa-list ad" id="book_listing"></i></a>
 
-              <i class="col-md-4 fa fa-home">
-              </i>
-            </a>
-
-          </div>
-        </div>
-
-
-      </h4>
-    </header>
+<a href="alert.html" title="home"><i class="fa fa-calendar ad" id="alerts"></i></a>
+</div>   
+</div>
+</header>
     <div class="container">
       <%= yield %>
     </div>

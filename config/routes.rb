@@ -68,7 +68,7 @@ SpeakingBible::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'dashboard#index'
+  root :to => 'home#index'
   match '/new'=>"home#new"
   match '/alert'=>"home#alert"
   match '/listen'=>"home#listen"

@@ -19,6 +19,6 @@
 
 # require File.expand_path('../verse.rb', __FILE__)
 
-# require File.expand_path('../hindi_books.rb', __FILE__)
-require File.expand_path('../hindi_chapter_seeds.rb', __FILE__)
-require File.expand_path('../hindi_verse.rb', __FILE__)
+require File.expand_path('../hindi_books.rb', __FILE__)
+#require File.expand_path('../hindi_chapter_seeds.rb', __FILE__)
+#require File.expand_path('../hindi_verse.rb', __FILE__)

@@ -38,7 +38,7 @@ margin-right:10px;
 color:white;	
 }
 .item{
-background: url(/images/logo-cross.jpg) repeat !important;	
+background: image-url('/assets/logo-cross.jpg');  !important;	
 }
 
 .item h3{
